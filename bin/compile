@@ -79,6 +79,8 @@ build() {
     echo "-------- YYYYYY ---------"
     echo "pwd: " `pwd`
     echo "-------- YYYYYY ---------"
+    meteor update
+    meteor list
     
     status "Building meteor bundle"
     meteor build --directory deploy --server http://localhost:3000
