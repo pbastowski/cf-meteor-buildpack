@@ -79,6 +79,7 @@ build() {
     echo "-------- YYYYYY ---------"
     echo "pwd: " `pwd`
     echo "-------- YYYYYY ---------"
+    meteor npm rebuild
     meteor update
     meteor list
     
