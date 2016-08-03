@@ -79,10 +79,14 @@ build() {
     echo "-------- YYYYYY ---------"
     echo "pwd: " `pwd`
     echo "-------- YYYYYY ---------"
-    meteor npm rebuild
+    echo "-------- npm install ---------"
+    meteor npm install
+    echo "-------- meteor update ---------"
     meteor update
+    echo "-------- meteor list ---------"
     meteor list
     
+    echo "-------- meteor build ---------"
     status "Building meteor bundle"
     meteor build --directory deploy --server http://localhost:3000
     cd deploy/bundle/programs/server
