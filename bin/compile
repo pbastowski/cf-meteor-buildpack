@@ -80,6 +80,8 @@ build() {
     echo "pwd: " `pwd`
     echo "-------- YYYYYY ---------"
     echo "-------- npm install ---------"
+    meteor npm config set production
+    npm config set production
     meteor npm install
     echo "-------- meteor update ---------"
     meteor update
