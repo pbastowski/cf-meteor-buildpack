@@ -83,6 +83,8 @@ build() {
     meteor npm install
     echo "-------- meteor update ---------"
     meteor update
+    echo "-------- meteor list ---------"
+    meteor list
 
     echo "-------- meteor build ---------"
     status "Building meteor bundle"
